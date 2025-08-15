@@ -62,9 +62,9 @@ class _ClaimPageState extends State<ClaimPage> {
                       return const Center(child: Text('No claims found'));
                     }
                     return ListView.builder(
-                      itemCount: state.claims.length,
+                      itemCount: filteredClaims.length,
                       itemBuilder: (_, i) {
-                        final claim = state.claims[i];
+                        final claim = filteredClaims[i];
                         return Card(
                           child: ListTile(
                             title: Text(
