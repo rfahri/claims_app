@@ -11,7 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   dio: ^5.9.0
   flutter_modular:
   flutter_bloc: ^9.1.1
@@ -23,6 +22,8 @@ dependencies:
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  integration_test:
     sdk: flutter
   mockito: ^5.5.0
   build_runner: ^2.6.0

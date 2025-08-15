@@ -1,4 +1,3 @@
-import 'package:claims_app/features/claims/data/models/claim_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import '../../../../core/errors/failure.dart';
