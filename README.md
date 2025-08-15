@@ -9,7 +9,7 @@ A flutter app for displaying insurance claims
 4. Run the app: `flutter run`
 5. Run build runner for testing : `dart run build_runner build --delete-conflicting-outputs`
 
-##App Preview
+## App Preview
 ![Home Page](assets/screenshots/home.jpg)
 ![Detail Page](assets/screenshots/details.jpg)
 ![Error](assets/screenshots/error.jpg)
