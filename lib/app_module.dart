@@ -8,10 +8,7 @@ import 'features/claims_module.dart';
 class AppModule extends Module {
   @override
   void binds(Injector i) {
-    // Registrasi DioClient
     i.addLazySingleton<DioClient>(() => DioClient());
-
-    // Registrasi Dio langsung dari DioClient
     i.addLazySingleton<Dio>(() => i<DioClient>().dio);
   }
 
