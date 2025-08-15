@@ -1,6 +1,12 @@
-class Failure {
-  int code; // 200, 201, 400, 303..500 and so on
-  String message; // error , success
+abstract class Failure {
+  final String message;
+  Failure(this.message);
+}
 
-  Failure(this.code, this.message);
+class ServerFailure extends Failure {
+  ServerFailure(String message) : super(message);
+}
+
+class NetworkFailure extends Failure {
+  NetworkFailure(String message) : super(message);
 }
