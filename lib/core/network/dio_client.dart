@@ -9,6 +9,9 @@ class DioClient {
     baseUrl: baseUrl,
     connectTimeout: const Duration(seconds: 10),
     receiveTimeout: const Duration(seconds: 20),
+    headers: {
+      'Accept': 'application/json',
+    },
   )) {
     dio.interceptors.add(LogInterceptor(
       request: true,
