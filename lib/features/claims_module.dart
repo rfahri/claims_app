@@ -19,7 +19,7 @@ class ClaimsModule extends Module {
   @override
   void binds(Injector i) {
     // DataSource
-    i.addLazySingleton<RemoteDataSourceImpl>(
+    i.addLazySingleton<RemoteDataSource>(
       () => RemoteDataSourceImpl(i<Dio>()),
     );
 
