@@ -1,9 +1,10 @@
+import 'package:claims_app/core/utilities/app_constant.dart';
 import 'package:dio/dio.dart';
 
 class DioClient {
   final Dio dio;
 
-  DioClient({String baseUrl = 'https://jsonplaceholder.typicode.com'})
+  DioClient({String baseUrl = AppConstant.appUrl})
       : dio = Dio(BaseOptions(
     baseUrl: baseUrl,
     connectTimeout: const Duration(seconds: 10),

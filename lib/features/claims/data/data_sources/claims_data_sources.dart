@@ -11,7 +11,7 @@ class RemoteDataSourceImpl implements RemoteDataSource {
 
   @override
   Future<List<ClaimModel>> getClaims() async {
-    final res = await dio.get('/posts');
+    final res = await dio.get('posts');
     final data = res.data as List;
     return data.map((e) => ClaimModel.fromJson(e as Map<String, dynamic>)).toList();
   }
