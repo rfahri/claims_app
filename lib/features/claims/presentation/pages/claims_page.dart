@@ -37,7 +37,7 @@ class _ClaimPageState extends State<ClaimPage> {
               child: TextField(
                 onChanged: (value) {
                   setState(() {
-                    _searchQuery = value;
+                    _searchQuery = value.toLowerCase();
                   });
                 },
                 decoration: const InputDecoration(
